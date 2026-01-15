@@ -50,6 +50,7 @@ p{
 nav li{
     color:#3B3E3F;
     display:inline;
+    font-size: 50px;
     border: 2px solid #D64000;
     background-color: #ffffff;
     text-align: center;
@@ -65,4 +66,10 @@ nav li{
     display: flex;
     justify-content: center;
     margin-top: -100px;
+}
+
+.position_menu{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
 }
