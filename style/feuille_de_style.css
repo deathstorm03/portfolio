@@ -67,12 +67,10 @@ nav li{
 }
 
 .position_projets{
-    display: flex;
     text-align: right;
 }
 
 .position_accueil{
-    display: flex;
     text-align: left;
 }
 
