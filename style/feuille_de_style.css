@@ -51,6 +51,7 @@ nav li{
     color:#3B3E3F;
     font-size: 30px;
     font-family: 'Audiowide';
+    display: inline;
 }
 
 .position_img{
