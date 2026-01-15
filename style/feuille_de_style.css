@@ -46,11 +46,21 @@ p{
     font-size: 18px;
 }
 
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /*Mise en forme des éléments de la liste qui sert pour la navigation*/
 nav li{
     color:#3B3E3F;
     font-size: 30px;
     font-family: 'Audiowide';
+}
+
+nav ul{
+    list-style: none;
 }
 
 .position_img{
