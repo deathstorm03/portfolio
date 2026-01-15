@@ -61,7 +61,7 @@ nav li{
     font-family: 'Audiowide';
 }
 
-img{
+.position_img{
     display: flex;
     justify-content: center;
 }
