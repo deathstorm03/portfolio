@@ -1,0 +1,47 @@
+/*Importation de la police pour les titre H1*/
+@font-face {
+    font-family: 'CapitolCity';
+    src: url('../fonts/capitolcity.ttf') format('truetype');
+}
+
+/*Importation de la police pour les titre H2 et des mots spécifiques*/
+@font-face {
+    font-family: 'SairaStencilOne';
+    src: url('../fonts/SairaStencilOne-Regular.ttf') format('truetype');
+}
+
+/*Importation de la police pour les paragraphes*/
+@font-face {
+    font-family: 'Audiowide';
+    src: url('../fonts/Audiowide-Regular.ttf') format('truetype');
+}
+
+/*Mise en forme et positionnement des titres H1*/
+h1{
+    font-family: 'CapitolCity';
+    font-size: 45px;
+    color:#3B3E3F;
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Mise en forme des titres H2*/
+h2{
+    font-family: 'SairaStencilOne';
+    color: #0e44ad;
+    font-size: 30px;
+}
+
+/*Mise en forme des liens*/
+a{
+    color:#D64000;
+}
+
+/*Mise en forme des paragraphes*/
+p{
+    font-family: 'Audiowide';
+    color:#3B3E3F;
+    font-size: 18px;
+}
