@@ -57,9 +57,6 @@ nav li{
     color:#3B3E3F;
     font-size: 30px;
     font-family: 'Audiowide';
-}
-
-nav ul{
     list-style: none;
 }
 
@@ -71,6 +68,11 @@ nav ul{
 
 .position_projets{
     display: flex;
-    justify-content: flex-end;
+    text-align: right;
+}
+
+.position_accueil{
+    display: flex;
+    text-align: left;
 }
 
