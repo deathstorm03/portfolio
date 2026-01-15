@@ -50,7 +50,7 @@ p{
 nav li{
     color:#3B3E3F;
     display:inline;
-    font-size: 50px;
+    font-size: 30px;
     border: 2px solid #D64000;
     background-color: #ffffff;
     text-align: center;
@@ -70,6 +70,5 @@ nav li{
 
 .position_menu{
     display: flex;
-    justify-content: center;
     justify-content: space-between;
 }
