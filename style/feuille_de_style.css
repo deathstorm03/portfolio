@@ -60,3 +60,8 @@ nav li{
     padding-left: 12px;
     font-family: 'Audiowide';
 }
+
+img{
+    display: flex;
+    justify-content: center;
+}
