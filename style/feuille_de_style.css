@@ -61,6 +61,7 @@ nav li{
 }
 
 .position_projets{
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
 }
 
