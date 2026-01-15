@@ -71,4 +71,5 @@ nav li{
 .position_menu{
     display: flex;
     justify-content: space-between;
+    margin:-100px;
 }
