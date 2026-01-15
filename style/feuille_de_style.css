@@ -64,4 +64,5 @@ nav li{
 .position_img{
     display: flex;
     justify-content: center;
+    object-position: top;
 }
