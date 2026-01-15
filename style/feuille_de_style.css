@@ -45,3 +45,18 @@ p{
     color:#3B3E3F;
     font-size: 18px;
 }
+
+/*Mise en forme des éléments de la liste qui sert pour la navigation*/
+nav li{
+    color:#3B3E3F;
+    display:inline;
+    border: 2px solid #D64000;
+    background-color: #ffffff;
+    text-align: center;
+    margin-right: 4px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 12px;
+    padding-left: 12px;
+    font-family: 'Audiowide';
+}
