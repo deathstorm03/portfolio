@@ -16,61 +16,293 @@
     src: url('../fonts/Audiowide-Regular.ttf') format('truetype');
 }
 
+
+/*Mise en forme du corps des pages*/
+html,body {
+    margin: 0;
+    padding: 0;
+    background-color: #262626;
+}
+
+/*Placement de l'en-tete*/
+header{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+/*Placement du logo*/
+img{
+    margin-left: 30px;
+}
+
+/*Placement du titre*/
+header h1{
+    margin: 0;
+    padding: 0;
+}
+
 /*Mise en forme et positionnement des titres H1*/
 h1{
     font-family: 'CapitolCity';
     font-size: 45px;
-    color:#3B3E3F;
+    color:white;
     height: 2.5em;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 /*Mise en forme des titres H2*/
 h2{
     font-family: 'SairaStencilOne';
-    color: #0e44ad;
+    color: #18a5ec;
     font-size: 30px;
+}
+
+/*Mise en forme des titres H3*/
+h3{
+    font-family: 'Audiowide';
+    color: white;
+    font-size: 20px;
+    margin-bottom: 0;
 }
 
 /*Mise en forme des liens*/
 a{
-    color:#D64000;
+    color:#ff621f;
+    text-decoration: none;
+}
+
+/*Mise en forme du survol du lien pour la page projet*/
+.lien_projet:hover{
+    color:#18a5ec;
+}
+
+/*Mise en forme du lien pour la page projet*/
+.lien_projet{
+    color:white;
+}
+
+/*Mise en forme du survol du lien pour la page accueil*/
+.lien_accueil:hover{
+    color:#18a5ec;
+}
+
+/*Mise en forme du lien pour la page accueil*/
+.lien_accueil{
+    color:white;
 }
 
 /*Mise en forme des paragraphes*/
 p{
     font-family: 'Audiowide';
-    color:#3B3E3F;
+    color:white;
     font-size: 18px;
 }
 
+/*Positionnement du menu de navigation*/
 nav{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/*Disposition des boutons du menu de navigation*/
+.position_menu{
+    display: inline;
 }
 
 /*Mise en forme des éléments de la liste qui sert pour la navigation*/
 nav li{
-    color:#3B3E3F;
-    font-size: 30px;
+    color:white;
+    font-size: 22px;
     font-family: 'Audiowide';
     list-style: none;
+    border: solid 2px #ff621f;
+    border-radius: 30px;
+    padding: 10px;
 }
 
-.position_img{
+/*Enlève l'espace entre la barre et le bouton accueil*/
+.accueil{
+    padding: 0;
+}
+
+/*Positionnement et apparence des barres sur les cote du menu de navigation*/
+nav::before,nav::after{
+    position: relative;
+    top: 41px;
+    content: "";
+    flex: 1;
+    height: 3px;
+    background-color: #ff621f;
+}
+
+/*Positionnement et apparence du texte de présentation*/
+.debut_presentation{
     display: flex;
     justify-content: center;
-    margin-top: -100px;
+    margin-top: 50px;
 }
 
-.position_projets{
-    text-align: right;
+
+.contenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
-.position_accueil{
-    text-align: left;
+.texte_presentation{
+    width: 700px;
+    margin-left: 40px;
+}
+
+
+/*Positionnement et apparence des séparateurs*/
+hr {
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    border: none;
+    height: 3px;
+    background-color: #ff621f;
+}
+
+/*Positionnement du titre des competences*/
+.titre_competences{
+    display: flex;
+    justify-content: center;
+}
+
+.logo_competences{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_competences i{
+    font-size: 100px;
+    color: white;
+    margin: 20px;
+    margin-bottom: 50px;
+}
+
+.fa-html5:hover{
+    color: #18a5ec;
+}
+
+.fa-css3:hover{
+    color: #18a5ec;
+}
+
+.fa-github:hover{
+    color: #18a5ec;
+}
+
+/*Section hobby*/
+.titre_hobby{
+    display: flex;
+    justify-content: center;
+}
+
+.logo_hobby{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo_hobby i{
+    font-size: 50px;
+    color: white;
+    margin: 20px;
+    margin-bottom: 50px;
+}
+
+.disposition_jeu{
+    margin:20px;
+}
+
+.disposition_jeu:hover h3,
+.disposition_jeu:hover i{
+    color: #ff621f;
+}
+
+.disposition_figurine{
+    margin:20px;
+}
+
+.disposition_figurine:hover h3,
+.disposition_figurine:hover i{
+    color: #ff621f;
+}
+
+.disposition_lecture{
+    margin:20px;
+}
+
+.disposition_lecture:hover h3,
+.disposition_lecture:hover i{
+    color: #ff621f;
+}
+
+
+/*Partie reseaux sociaux*/
+.reseaux{
+    display: flex;
+    flex-direction: column;   
+    align-items: center;     
+}
+
+.boutons{
+    gap: 10px;
+}
+
+.fa {
+    padding: 20px;
+    margin: 5px 2px;
+}
+
+.fa-instagram:hover {
+  opacity: 0.7;
+}
+
+.fa-linkedin:hover {
+  opacity: 0.7;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    color: white;
+}
+
+/*Positionnement du bas de page*/
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+/*Mise en forme bouton mail*/
+.mail{
+    font-size: 25px;
+    background-color: #18a5ec;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.mail:hover{
+    opacity: 0.7;
+}
+
+.lien_mail{
+    color: white;
 }
 
