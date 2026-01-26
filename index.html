@@ -5,33 +5,105 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="style/feuille_de_style.css">
     <link rel="icon" type="image/png" href="media/images/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Portfolio</title>
   </head>
   <body>
+    <header>
+      <h1>Portfolio</h1>
+      <img
+      alt="Logo reprenant les initiales de Nathan Margouet et avec une icone d'engrenage et une icone de curseur"
+			title="Logo" 
+			width="135px" 
+			src="media/images/logo.png"
+      />
+    </header>
+
     <nav>
-
-      <div class="position_accueil">
-        <ul>
-          <li>Accueil</li>
-        </ul>
-      </div>
-
-      <div class="position_projets">
-        <ul>
-          <li><a href="./projets.html">Mes projets</a></li>
-        </ul>
-      </div>
-      
-      <div class="position_img">
-        <img
-        alt="Logo reprenant les initiales de Nathan Margouet et avec une icone d'engrenage et une icone de curseur"
-			  title="Logo" 
-			  width="330px" 
-			  height="auto" 
-			  src="media/images/logo.png"
-        />
-      </div>
-      
+      <ul class="accueil">
+        <li>Accueil</li>
+      </ul>
+      <ul>
+        <li><a class="lien_projet" href="./projets.html">Mes projets</a></li>
+      </ul>
     </nav>
+
+    <section class="debut_presentation">
+      <h2>Qui suis je ?</h2>
+    </section>
+
+    <section class="presentation">
+      <div class="contenu">
+        <img
+        alt="Photo de Nathan Margouet"
+        title="Photo de profil de Nathan Margouet"
+        width="300px"
+        height="auto"
+        src="media/images/photo.png"/>
+        <p class="texte_presentation">
+          Je me présente, je m'appelle Nathan Margouet. Actuellement je suis étudiant en première de <a href="https://www.sciences.unilim.fr/tic/deust-webmaster-et-metiers-de-linternet/" target="_blank">DEUST Webmaster et Métiers de l'Internet à l'université de Limoges</a>. Si j'ai choisi cette filière, c'est pour l'intérêt que je porte au développement web, intérêt que j'ai développé au cours de quatre années dans <a href="https://www.univ-jfc.fr/licences/informatique" target="_blank">la Licence Informatique de l'INU Champollion à Albi</a>. 
+          Le DEUST Webmaster et Métiers de l'Internet me permet d'approfondir mes connaissances en HTML, CSS et GitHub, tout en me faisant découvrir les aspect de la gestion du marketing d'un site web.
+        </p>
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="titre_competences">
+      <h2>Mes compétences</h2>
+    </section>
+    <section class="logo_competences">
+      <i class="fa fa-html5"></i>
+      <i class="fa fa-css3"></i>
+      <i class="fa fa-github"></i>
+    </section>
+
+    <hr>
+
+    <section class="titre_hobby">
+      <h2>Mes hobbies</h2>
+    </section>
+    <section class="logo_hobby">
+      <div class="disposition_jeu">
+        <h3>Jeux vidéos</h3>
+        <i class="fa fa-gamepad"></i>
+      </div>
+      <div class="disposition_figurine">
+        <h3>Figuriniste</h3>
+        <i class="fa fa-paint-brush"></i>
+      </div>
+      <div class="disposition_lecture">
+        <h3>Lecture</h3>
+        <i class="fa fa-book"></i>
+      </div>
+    </section>
+
+    <section class="citation">
+      <h2>Citation du jour</h2>
+      <p id="displayJoke"></p>
+    </section>
+
+    <footer>
+      <div class="reseaux">
+        <p>Retrouvez moi sur :</p>
+        <div class="boutons">
+          <a href="https://www.instagram.com/neisanygo_tf/" target="_blank" class="fa fa-instagram"></a>
+          <a href="https://www.linkedin.com/in/nathan-margouet-723b10314/" target="_blank" class="fa fa-linkedin"></a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2026 by Nathan Margouet </p>
+      </div>
+      <div class="mail">
+        <p><a class="lien_mail" href="mailto:nathanmargouet@gmail.com">Me contacter</a></p>
+      </div>
+    </footer>
+
+    <script>
+      fetch('https://programming-quotesapi.vercel.app/api/random')
+      .then(response => response.json())
+      .then(quote => console.log(quote))
+    </script>
+    
   </body>
 </html>
