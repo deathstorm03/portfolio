@@ -205,7 +205,6 @@ hr {
 .titre_api{
     display: flex;
     justify-content: center;
-    text-align: center;
 }
 
 .api_norris{
