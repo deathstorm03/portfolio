@@ -12,6 +12,7 @@
     <header>
       <h1>Portfolio</h1>
       <img
+      class="logo"
       alt="Logo reprenant les initiales de Nathan Margouet et avec une icone d'engrenage et une icone de curseur"
 			title="Logo" 
 			width="135px" 
@@ -41,7 +42,7 @@
         height="auto"
         src="media/images/photo.png"/>
         <p class="texte_presentation">
-          Je me présente, je m'appelle Nathan Margouet. Actuellement je suis étudiant en première de <a href="https://www.sciences.unilim.fr/tic/deust-webmaster-et-metiers-de-linternet/" target="_blank">DEUST Webmaster et Métiers de l'Internet à l'université de Limoges</a>. Si j'ai choisi cette filière, c'est pour l'intérêt que je porte au développement web, intérêt que j'ai développé au cours de quatre années dans <a href="https://www.univ-jfc.fr/licences/informatique" target="_blank">la Licence Informatique de l'INU Champollion à Albi</a>. 
+          Je me présente, je m'appelle Nathan Margouet. Actuellement je suis étudiant en première année de <a href="https://www.sciences.unilim.fr/tic/deust-webmaster-et-metiers-de-linternet/" target="_blank">DEUST Webmaster et Métiers de l'Internet à l'université de Limoges</a>. Si j'ai choisi cette filière, c'est pour l'intérêt que je porte au développement web, intérêt que j'ai développé au cours de quatre années dans <a href="https://www.univ-jfc.fr/licences/informatique" target="_blank">la Licence Informatique de l'INU Champollion à Albi</a>. 
           Le DEUST Webmaster et Métiers de l'Internet me permet d'approfondir mes connaissances en HTML, CSS et GitHub, tout en me faisant découvrir les aspect de la gestion du marketing d'un site web.
         </p>
       </div>
@@ -78,9 +79,14 @@
       </div>
     </section>
 
-    <section class="citation">
-      <h2>Citation du jour</h2>
-      <p id="displayJoke"></p>
+    <hr>
+
+    <section class="titre_api">
+      <h2>Et n'oubliez pas...</h2>
+    </section>
+
+    <section class="api_norris">
+      <p id="blague"></p>
     </section>
 
     <footer>
@@ -98,12 +104,7 @@
         <p><a class="lien_mail" href="mailto:nathanmargouet@gmail.com">Me contacter</a></p>
       </div>
     </footer>
-
-    <script>
-      fetch('https://programming-quotesapi.vercel.app/api/random')
-      .then(response => response.json())
-      .then(quote => console.log(quote))
-    </script>
     
+    <script src="api.js"></script>
   </body>
 </html>
